@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: warungpos_db
+    environment:
+      POSTGRES_USER: warung_user
+      POSTGRES_PASSWORD: warung_password
+      POSTGRES_DB: warungpos_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  backend:
+    build: ./backend
+    container_name: warungpos_backend
+    environment:
+      - DATABASE_URL=postgresql://warung_user:warung_password@db:5432/warungpos_db
+      - SECRET_KEY=supersecretkeyforwarungpos1234567890!
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: warungpos_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  postgres_data:
