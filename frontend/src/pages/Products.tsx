@@ -7,7 +7,6 @@ import {
   Barcode, 
   Search, 
   X,
-  PackageCheck,
   AlertTriangle
 } from 'lucide-react';
 import api from '../api';

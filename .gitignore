@@ -6,3 +6,6 @@ venv/
 *.db
 dist/
 .vite/
+
+.vercel
+.env*

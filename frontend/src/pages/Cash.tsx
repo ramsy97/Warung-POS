@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { DollarSign, ArrowDownLeft, ArrowUpRight, Plus, FileText, Calendar } from 'lucide-react';
+import { DollarSign, ArrowDownLeft, ArrowUpRight, Plus, Calendar } from 'lucide-react';
 import api from '../api';
 
 interface CashTransaction {

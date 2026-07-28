@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FileText, Calendar, TrendingUp, TrendingDown, DollarSign, Printer, Download } from 'lucide-react';
+import { FileText, Calendar, TrendingUp, TrendingDown, Printer, Download } from 'lucide-react';
 import api from '../api';
 
 interface SalesLog {

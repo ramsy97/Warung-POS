@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { TrendingDown, Calendar, CreditCard, DollarSign, X, Check } from 'lucide-react';
+import { TrendingDown, Calendar, CreditCard, X, Check } from 'lucide-react';
 import api from '../api';
 
 interface DebtPayment {

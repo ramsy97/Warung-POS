@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Cell } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { 
   TrendingUp, 
   ShoppingBag, 
@@ -7,7 +7,6 @@ import {
   AlertTriangle, 
   ArrowUpRight, 
   Users, 
-  Package, 
   ChevronRight, 
   Layers
 } from 'lucide-react';

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Trash2, Calendar, FileText, Truck, Package, DollarSign } from 'lucide-react';
+import { Plus, Trash2, Calendar, FileText, Truck } from 'lucide-react';
 import api from '../api';
 
 interface Supplier {

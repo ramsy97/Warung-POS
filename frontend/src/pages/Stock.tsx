@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { RefreshCw, Plus, Minus, FileText, AlertCircle, Calendar } from 'lucide-react';
+import { RefreshCw, Plus, Minus, Calendar } from 'lucide-react';
 import api from '../api';
 
 interface Product {
