@@ -2590,5 +2590,13 @@ def export_profit_loss_pdf(
     )
 
 
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
+
+frontend_dist = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+if frontend_dist.exists():
+    app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="frontend")
+
+
 # Cleaned up alias endpoints that are now integrated natively.
 
